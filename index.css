@@ -22,6 +22,57 @@ body {
     border: 5px solid whitesmoke;
 }
 
+.card:hover {
+    transform: rotate(270deg);
+    transition: 2.2s;
+    width: 400px;
+    height: 700px;
+}
+
+.card:hover > .image > img {
+    transform: rotate(90deg);
+    height: 250px;
+    width: 250px;
+    margin-left: 141px;
+    transition: 3s;
+}  
+
+.card:hover > .name {
+    transition: 1s;
+    transform: rotate(90deg);
+    margin: -150px 225px 150px 0px;
+}
+
+.card:hover > .contacts, .card:hover > .about, .card:hover > .social {
+    transform: rotate(90deg);
+}
+
+.card:hover > .contacts {
+    margin-top: 280px;
+    transition: 2s;
+}
+
+.card:hover > .about {
+    transition: 1.5s;
+    margin: 0px -150px 0px 0px;
+}
+
+.card:hover > .about > p {
+    width: 400px;
+}
+
+.card:hover > .social {
+    margin-right: 300px;
+    margin-top: -120px;
+    transition: 2s;
+}
+
+.card:hover > .social > a {
+    margin-left: 50px;
+    font-size: 22px;
+    height: 35px;   
+}
+
 .image > img {
     width: 100%;
     height: 300px;
@@ -72,12 +123,12 @@ body {
     margin-top: 40px;
 }
 
-.about > h3 {
+.about >  h3 {
     margin-bottom: 5px;
     font-family: 'Playpen Sans', cursive;
 }
 
-.about p {
+.about > p {
     font-family: 'Lora', sans-serif;
     font-style: italic;
 }
